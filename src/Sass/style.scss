@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primarycolor:#2163E8;
+    --secondarycolor:#444444;
+    --brand:#303136;
+    --black:#101010;
+    
+}
+// Header starts Here
+header {
+    color: var(--secondarycolor);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px auto;
+    a{
+        color: var(--secondarycolor);
+    }
+}
+// Header Ends Here
+//Nav start Here
+nav{
+    font-size: 18px;
+    font-weight: 500 !important;
+    background-color: #ffff;
+    ul{
+        li{
+            a{
+               &:hover{
+                color: var(--primarycolor);
+               } 
+            }
+        }
+    }
+    form{
+        font-size: 18px !important;
+    }
+}
+//Nav Ends Here
+//Bannner Starts Here
+.mainwrapper{
+.mainbox{
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;  
+    img{
+       
+        border-radius: 10px;
+        opacity: 0.8;
+        transition:0.1s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            opacity: 1;
+            
+        }
+    }
+    
+    .imgsmall{
+        position:absolute;
+        bottom: 10px;
+        margin: 0px 10px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+   
+}
+.design{
+    position:relative;
+    border-radius: 10px;
+    overflow: hidden;
+   
+    img{
+        z-index: -1;
+        gap: 10px;
+        border-radius: 10px;
+        opacity: 0.8;
+        transition: 0.1s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            opacity: 1;
+            
+        }
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .imgxsmall{
+        color:#ffff;
+        position:absolute;
+        bottom: 0px;
+        left:10px;
+        font-size: 16px;
+    }
+}
+
+}
+
+//Banner Ends Here
+//Footer starts Here
+footer{
+    
+    .mainfooter{
+        background-color:#191A1F;
+       .logofooter{
+        p{
+            color: white;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        img{
+            margin: 10px auto;
+            padding-bottom: 10px;
+            
+        }
+    }
+    .implink{
+        h4{
+            color: white;
+            margin: 10px auto;
+            padding-bottom: 10px;
+            font: 500;
+        }
+        ul{
+
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .browse{
+        h4{
+            color: white;
+            margin: 10px auto;
+            padding-bottom: 10px;
+            font: 500; 
+        }
+        .btn{
+            margin: 5px 5px;
+            font-size: 15px;
+            font-weight: 400;
+
+        }
+    }
+    .socialmedia{
+        h4{
+            color: white;
+            margin: 10px auto;
+            padding-bottom: 10px;
+            font: 500;    
+        }
+        img{
+            padding: 0px 10px;
+        }
+    }
+
+    
+    }
+.subfooter{
+    background-color:black;
+    height: 50px;
+
+    p{
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        list-style: 10px;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+}
+//Footer ends Here
+// Slider Starts Here
+.slider{
+    .card{
+        height: 300px;
+        .img{
+            height: 200px;
+        }
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: var(--primarycolor);
+    }
+}
+// Slider Ends Here
+// GoToTop Starts here
+.section{
+    .top-btn{
+        font-size:2.4rem;
+        width:40px;
+        height: 40px;
+        color:#fff;
+        background-color:var(--primarycolor);
+        border-radius:50%;
+        position:fixed;
+        z-index:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        cursor: pointer;
+        right:0px;
+        bottom: 50px;
+        .goToBtn{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            
+        
+        &--bi{
+            animation: gototop 1.2s linear infinite alternate-reverse;
+        }
+        @keyframes gototop {
+            0%{
+                transform: translateY(-0.5rem);
+            }
+            100%{
+                transform: translateY(1rem);
+            }
+            
+        }
+    }
+}
+}
+//GoToTop Ends here//
